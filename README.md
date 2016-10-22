@@ -1,7 +1,7 @@
 # Should I click this link?
 
 A simple click-through decision flowchart to help people decide wether they
-should click a link or not. **This thing should not be taken too seriosly!**
+should click a link or not. **This thing should not be taken too seriously!**
 
 The excellent flowchart is taken from [Intel ClickSmart](http://digitalsecurity.intel.com/clicksmart/en/#flowchart). Hope they won't mind. :)
 
