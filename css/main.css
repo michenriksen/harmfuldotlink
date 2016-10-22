@@ -1,0 +1,149 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+body.caution {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+body.safe {
+  background-color: #97ED8A;
+  color: #044C29;
+}
+
+body.danger {
+  background-color: #B13D40;
+  color: #472726;
+}
+
+body.danger .page-header {
+  border-bottom: 1px solid #A62428;
+}
+
+body.safe .page-header {
+  border-bottom: 1px solid #45BF55;
+}
+
+body.caution .page-header {
+  border-bottom: 1px solid #faebcc;
+}
+
+.page-header h1 small {
+  display: block;
+  color: inherit;
+}
+
+.page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.node {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  min-height: 250px;
+  vertical-align: middle;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.node h2.big {
+  font-size: 24px;
+}
+
+.node .answers {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.node .answers a.answer {
+  margin-right: 10px;
+  margin-right: 10px;
+}
+
+body.caution .node {
+  background-color: #faebcc;
+}
+
+body.safe .node {
+  background-color: #45BF55;
+}
+
+body.danger .node {
+  background-color: #A62428;
+}
+
+body.danger .node::after {
+  content: "";
+  background: url("/images/danger.png") center 110px no-repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+body.safe .node::after {
+  content: "";
+  background: url("/images/safe.png") center 110px no-repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    font-size: 11px;
+    padding: 10px;
+    opacity: 0.3;
+}
+
+.footer:hover {
+  opacity: 1.0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.disclaimer {
+  font-size: 9px;
+}
+
+body.danger .footer {
+  border-top: 1px solid #A62428;
+}
+
+body.safe .footer {
+  border-top: 1px solid #45BF55;
+}
+
+body.caution .footer {
+  border-top: 1px solid #faebcc;
+}
